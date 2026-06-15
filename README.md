@@ -1,4 +1,4 @@
-# Certamen 3 
+# Certamen 3
 
 Este trabajo es individual. El objetivo es que apliques estructuras de control, lógica y manejo de datos básicos en Python, resolviendo situaciones similares a las que podrías enfrentar en la vida real.
 
@@ -21,17 +21,17 @@ Este trabajo es individual. El objetivo es que apliques estructuras de control, 
 
 ---
 
-## Problema 1: Control de Temperatura en un Invernadero (25 pts)
+## Problema 1: Control de Velocidad en una Autopista (25 pts)
 
-**Enunciado:**  
-Un agricultor necesita monitorear la temperatura de su invernadero para asegurar el crecimiento óptimo de sus plantas. Debes ayudarle a identificar si las temperaturas registradas están dentro del rango adecuado y alertar si alguna es peligrosa.
+**Enunciado:**
+Una autopista instaló sensores para registrar la velocidad de los vehículos y detectar infracciones. Debes crear un programa que analice los registros y emita alertas cuando corresponda.
 
 **Indicaciones paso a paso:**
-1. Solicita al usuario que ingrese 5 temperaturas.
-2. Guarda las temperaturas en una lista.
-3. Calcula el promedio y la temperatura máxima.
-4. Verifica si todas las temperaturas están entre 15°C y 30°C.
-5. Si alguna temperatura está fuera de 10°C–35°C, muestra una advertencia.
+1. Solicita al usuario que ingrese 5 velocidades (en km/h).
+2. Guarda las velocidades en una lista.
+3. Calcula el promedio y la velocidad máxima registrada.
+4. Verifica si todas las velocidades están dentro del límite permitido (entre 60 y 120 km/h).
+5. Si alguna velocidad supera los 140 km/h o es menor a 20 km/h, muestra una advertencia de peligro.
 
 **Puntos asignados:** 25 pts
 
@@ -42,36 +42,36 @@ Un agricultor necesita monitorear la temperatura de su invernadero para asegurar
 
 ---
 
-## Problema 2: Análisis de Notas de Evaluación (35 pts)
+## Problema 2: Registro de Ventas de una Tienda (35 pts)
 
-**Enunciado:**  
-En una clase, se registran las notas de 3 estudiantes en 3 asignaturas. El profesor necesita saber los promedios y si todos aprobaron, además de alertar si algún estudiante tiene bajo rendimiento.
+**Enunciado:**
+Una pequeña tienda registra las ventas diarias de 3 vendedores durante 3 días de la semana. El dueño quiere saber el rendimiento de cada vendedor y si alguno tuvo bajo desempeño.
 
 **Indicaciones paso a paso:**
-1. Crea una matriz 3x3 para guardar las notas.
-2. Calcula el promedio de cada estudiante (por fila) y de cada asignatura (por columna).
-3. Verifica si todos los estudiantes aprobaron (nota >= 4.0).
-4. Muestra una alerta si algún promedio individual es menor a 3.5.
+1. Crea una matriz 3x3 para guardar los montos de ventas (cada fila es un vendedor, cada columna es un día).
+2. Calcula el total de ventas de cada vendedor (suma por fila solamente).
+3. Identifica qué vendedor tuvo el mayor total de ventas.
+4. Muestra una alerta si el total de algún vendedor es menor a $30.000.
 
 **Puntos asignados:** 35 pts
 
 **Criterios evaluados:**
 - Representación correcta de la matriz (10 pts)
-- Cálculo de promedios por fila y columna (10 pts)
-- Evaluación lógica de condiciones (10 pts)
+- Cálculo correcto del total por vendedor (10 pts)
+- Identificación del mejor vendedor (10 pts)
 - Claridad en mensajes y formato (5 pts)
 
 ---
 
-## Problema 3: Sistema de Acceso Condicional (20 pts)
+## Problema 3: Sistema de Descuento en Supermercado (20 pts)
 
-**Enunciado:**  
-En una empresa, el acceso a una zona restringida depende de la edad, el rol de supervisor y la autorización especial. Debes crear un sistema que determine si una persona puede ingresar.
+**Enunciado:**
+Un supermercado aplica descuentos especiales a sus clientes. Para acceder al descuento, el cliente debe ser mayor de 60 años o tener una tarjeta de socio, y además el total de su compra debe superar los $10.000.
 
 **Indicaciones paso a paso:**
-1. Solicita al usuario su edad, si es supervisor y si tiene autorización.
-2. Verifica si puede acceder: debe ser mayor de edad y cumplir al menos una condición (ser supervisor o tener autorización).
-3. Muestra un mensaje indicando si el acceso está permitido o denegado.
+1. Solicita al usuario su edad, si tiene tarjeta de socio (sí/no) y el monto total de su compra.
+2. Verifica si cumple las condiciones: el monto debe superar $10.000 y debe ser mayor de 60 años o tener tarjeta de socio.
+3. Muestra un mensaje indicando si obtiene el descuento del 15% o si no califica, mostrando el monto final en cada caso.
 
 **Puntos asignados:** 20 pts
 
@@ -79,5 +79,3 @@ En una empresa, el acceso a una zona restringida depende de la edad, el rol de s
 - Uso correcto de operadores lógicos (10 pts)
 - Validación de condiciones y entrada de datos (5 pts)
 - Claridad de la salida (5 pts)
-
----
